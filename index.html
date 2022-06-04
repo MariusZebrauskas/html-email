@@ -44,8 +44,39 @@
         justify-content: center;
         align-items: center;
       }
+      .position-midle {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .center-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .three-cols {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+
+        margin: 1rem 0;
+
+        font-family: sans-serif;
+        margin: 0 auto;
+      }
+
       @media only screen and (max-width: 400px) {
         .two-columns {
+          flex-direction: column;
+        }
+        .three-cols img {
+          width: 100px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .three-cols {
           flex-direction: column;
         }
       }
@@ -69,6 +100,7 @@
                     <td>
                       <a href="https://www.developer-js.com">
                         <img
+                          width="130"
                           src="img/modern.jpg"
                           width="180"
                           title="Modern logo"
@@ -79,7 +111,7 @@
                   </tr>
                 </table>
                 <!-- icons -->
-                <table >
+                <table>
                   <tr>
                     <td>
                       <a href="https://www.developer-js.com">
@@ -114,8 +146,79 @@
         </td>
       </tr>
       <!-- THREE COLUMN SECTION -->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr style="background: #ffffff" class="three-cols">
+              <!-- 1 -->
+              <td align="center" valign="center">
+                <img width="130" src="img/email.png" alt="" />
+                <p style="font-weight: bold; font-size: 1.2rem; margin-top: 0">Ecommerce</p>
+                <p
+                  style="
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 1.4;
+                    letter-spacing: 0.7px;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </td>
+              <!-- 2 -->
+              <td align="center" valign="center">
+                <img width="130" src="img/home.png" alt="" />
+                <p style="font-weight: bold; font-size: 1.2rem; margin-top: 0">Web Design</p>
+                <p
+                  style="
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 1.4;
+                    letter-spacing: 0.7px;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </td>
+              <!-- 3 -->
+              <td align="center" valign="center">
+                <img width="130" src="img/settings.png" alt="" />
+                <p style="font-weight: bold; font-size: 1.2rem; margin-top: 0">Lorem</p>
+                <p
+                  style="
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 1.4;
+                    letter-spacing: 0.7px;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
       <!-- TWO COLUMN SECTION -->
+      <tr>
+        <td>
+          <table style="width: 100%; ">
+            <tr style="background:#323232; color:#ffffff;" class="center position-midle">
+              <td>
+                <img style="padding: 1.5rem 1rem" src="/img/keyboard.jpg" width="130" alt="" />
+              </td>
+              <td  >
+                <p>Create Custom Design</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, exercitationem?
+                </p>
+                <button>Read More</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
       <!-- TITLE, TEXT & BUTTON -->
 
