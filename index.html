@@ -66,6 +66,17 @@
         font-family: sans-serif;
         margin: 0 auto;
       }
+      .img {
+        padding: 1.5rem 1rem;
+      }
+      .td {
+        padding: 1.5rem 0rem;
+      }
+      .text-media {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-align: left;
+      }
 
       @media only screen and (max-width: 400px) {
         .two-columns {
@@ -73,6 +84,24 @@
         }
         .three-cols img {
           width: 100px;
+        }
+        .media-on-mobile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .img {
+          padding: 2rem 0 0 0;
+        }
+        .td {
+          padding: 0 0;
+        }
+        .text-media {
+          max-width: 300px;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 1.1rem;
         }
       }
       @media only screen and (max-width: 700px) {
@@ -203,17 +232,29 @@
       <!-- TWO COLUMN SECTION -->
       <tr>
         <td>
-          <table style="width: 100%; ">
-            <tr style="background:#323232; color:#ffffff;" class="center position-midle">
+          <table style="width: 100%; font-family: sans-serif">
+            <tr
+              style="background: #0c0c0c; color: #ffffff"
+              class="center position-midle media-on-mobile"
+            >
               <td>
-                <img style="padding: 1.5rem 1rem" src="/img/keyboard.jpg" width="130" alt="" />
+                <img class="img" src="/img/keyboard.jpg" width="130" alt="" />
               </td>
-              <td  >
-                <p>Create Custom Design</p>
-                <p>
+              <td class="media-on-mobile td">
+                <p style="font-weight: bold">Create Custom Design</p>
+                <p class="text-media">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, exercitationem?
                 </p>
-                <button>Read More</button>
+                <a
+                  style="
+                    background-color: #ffffff;
+                    color: #171a1b;
+                    padding: 0.3rem 0.7rem;
+                    border-radius: 0.3rem;
+                    font-weight: bold;
+                  "
+                  >Read More</a
+                >
               </td>
             </tr>
           </table>
