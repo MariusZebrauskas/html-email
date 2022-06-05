@@ -10,6 +10,9 @@
         margin: 0;
         background-color: #cccccc;
       }
+      * {
+        font-family: sans-serif;
+      }
       table {
         border-spacing: 0;
       }
@@ -24,7 +27,6 @@
       }
 
       .main {
-        font-family: sans-serif;
         background-color: #ffffff;
         width: 100%;
         max-width: 600px;
@@ -76,6 +78,67 @@
         font-size: 0.9rem;
         line-height: 1.3rem;
         text-align: left;
+      }
+      .HTML-template h1 {
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+      .HTML-template p {
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+        padding: 0 1rem;
+      }
+
+      .HTML-template a {
+        background-color: #0c0c0c;
+        color: #ffffff;
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        margin-top: 0.5rem;
+      }
+      .footer {
+        background-color: #0c0c0c;
+        width: 100%;
+        color: #ffffff;
+        padding: 1rem;
+      }
+
+      .footer h2 {
+        font-size: 2.5rem;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+        margin-top: 4.5rem;
+      }
+      .footer-p1 {
+        margin-top: 1.5rem;
+        color: #cccccc;
+        font-size: 1.2rem;
+      }
+      .footer-p2 {
+        margin-top: 1.8rem;
+        color: #cccccc;
+        font-size: 1.2rem;
+		text-align: center;
+      }
+      .footer-img-wrapper {
+        margin-top: 1.5rem;
+      }
+      .footer-img-wrapper img {
+        width: 2.3rem;
+      }
+      .footer-subscribe {
+        color: #cccccc;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 2rem 0 3rem 0;
       }
 
       @media only screen and (max-width: 400px) {
@@ -232,7 +295,7 @@
       <!-- TWO COLUMN SECTION -->
       <tr>
         <td>
-          <table style="width: 100%; font-family: sans-serif">
+          <table style="width: 100%">
             <tr
               style="background: #0c0c0c; color: #ffffff"
               class="center position-midle media-on-mobile"
@@ -252,6 +315,7 @@
                     padding: 0.3rem 0.7rem;
                     border-radius: 0.3rem;
                     font-weight: bold;
+                    margin-bottom: 1rem;
                   "
                   >Read More</a
                 >
@@ -262,8 +326,46 @@
       </tr>
 
       <!-- TITLE, TEXT & BUTTON -->
+      <tr>
+        <td>
+          <table style="background-color: #ffffff" class="position-midle HTML-template">
+            <tr>
+              <td class="center-col">
+                <h1>Html Email Template Sample</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum tempore
+                  recusandae at harum reiciendis magnam quaerat quia commodi perferendis. Repellat,
+                  repudiandae voluptate.
+                </p>
+                <a href="https://www.developer-js.com/">View Details</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
       <!-- FOOTER SECTION -->
+      <tr>
+        <td>
+          <table class="footer position-midle">
+            <tr>
+              <td class="center-col">
+                <h2>Modern</h2>
+                <p class="footer-p1">Modern Html Email</p>
+                <p class="footer-p2">123 Street Road, Liverpool, State 54445</p>
+                <div class="footer-img-wrapper">
+                  <img src="/img/white-facebook.png" alt="" />
+                  <img src="/img/white-instagram.png" alt="" />
+                  <img src="/img/white-youtube.png" alt="" />
+                  <img src="/img/white-linkedin.png" alt="" />
+                  <img src="/img/white-twitter.png" alt="" />
+                </div>
+                <a class="footer-subscribe" href="https://www.developer-js.com/">SUBSCRIBE</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
   </body>
 </html>
